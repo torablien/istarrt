@@ -1,8 +1,10 @@
-Run Django
+Run Server
 
     $ python manage.py runserver $IP:$PORT
     
-## Configuration
+Adding New Template
 
-You can configure your Python version and `PYTHONPATH` used in
-Cloud9 > Preferences > Project Settings > Language Support.
+ - Make sure to go to workspace/istarrt/settings.py and add os.path.join(BASE_DIR, 'APP-NAME-HERE/templates') to TEMPLATES['DIRS']
+    
+
+Running on Django 1.9
