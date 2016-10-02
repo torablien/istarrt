@@ -1,17 +1,329 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html class="no-js">
 {% load static %}
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>iStarrt</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'airspace/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'airspace/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'airspace/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'airspace/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'airspace/css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'airspace/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'airspace/css/responsive.css' %}">
+    
+    <!-- JS -->
+    <script src="{% static 'airspace/js/vendor/modernizr-2.6.2.min.js' %}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    {% with jqueryfilepath="airspace/js/vendor/jquery-1.10.2.min.js" %}
+    <script>window.jQuery || document.write('<script src="{% static jqueryfilepath %}"><\/script>')</script>
+    {% endwith %}
+    
+    
+    <script src="{% static 'airspace/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'airspace/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'airspace/js/plugins.js' %}"></script>
+    <script src="{% static 'airspace/js/min/waypoints.min.js' %}"></script>
+    <script src="{% static 'airspace/js/jquery.counterup.js' %}"></script>
 
-<link rel="stylesheet" type="text/css" href="{% static 'home/style.css' %}" />
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="{% static 'airspace/js/google-map-init.js' %}"></script>
 
 
-<head>
-    <title>My Home Page</title>
+    <script src="{% static 'airspace/js/main.js' %}"></script>
 
-</head>
 
-<body>
-    <p>Welcome to the iStarrt homepage!</p>
-</body>
+  </head>
+  <body>
 
+
+
+    <!-- Header Start -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- header Nav Start -->
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <img src="{% static 'airspace/img/logo.png' %}" alt="Logo">
+                </a>
+              </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="work.html">Work</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header><!-- header close -->
+        
+    <!-- Slider Start -->
+    <section id="slider">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-2">
+            <div class="block">
+              <h1 class="animated fadeInUp">WE DO STUFF <br> I DON'T KNOW WHAT</h1>
+              <p class="animated fadeInUp">We love all the the stuff that we do. We work closely with some </br> people to do stuff for them.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Wrapper Start -->
+    <section id="intro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <div class="block">
+              <div class="section-title">
+                <h2>About Us</h2>
+                <p>Far far away, behind the Taylor Center, far from the worlds of Clarity and Reason, we exist. Separated from understanding we live in Lala land right at the coast of the WTF</p>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p>
+            </div>
+          </div><!-- .col-md-7 close -->
+          <div class="col-md-5 col-sm-12">
+            <div class="block">
+              <img src="{% static 'airspace/img/wrapper-img.png' %}" alt="Img">
+            </div>
+          </div><!-- .col-md-5 close -->
+        </div>
+      </div>
+    </section>
+
+  <section id="feature">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-6">
+          <h2>WE BELIEVE IN GREAT IDEAS</h2>
+          <p>But actually, who in the world doesn't? Morbi leo risus, porta ac consectetur, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <a href="#" class="btn btn-view-works">View Works</a>
+        </div>
+      </div>
+    </div>
+  </section>
+        
+    <!-- Service Start -->
+    <section id="service">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>Our Services</h2>
+            <p>We do cool things... apparently. What exactly? Hell if I know! I promise they are really creative, innovative, and inspiring. <br> I just don't know exactly what those things are...</p>
+          </div>
+        </div>
+        <div class="row ">
+          <div class="col-sm-6 col-md-3">
+            <div class="service-item">
+              <i class="icon ion-coffee"></i>
+              <h4>Innovation</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="service-item">
+              <i class="ion-compass"></i>
+              <h4>Intelligent Design</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="service-item">
+              <i class="ion-image"></i>
+              <h4>Technology</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="service-item">
+              <i class="ion-bug"></i>
+              <h4>Start Up</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="service-item">
+              <i class="ion-headphone"></i>
+              <h4>Inspiration</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="service-item">
+              <i class="ion-leaf"></i>
+              <h4>Development</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="service-item">
+              <i class="ion-planet"></i>
+              <h4>Accessibility</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="service-item">
+              <i class="ion-earth"></i>
+              <h4>Bullshit</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Call to action Start -->
+    <section id="call-to-action">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <h2>Did I mention we are awesome?</h2>
+              <p>Read more about what we do on the nonexistent page below. Judge for yourself the work and results we haven't done, and meet our highly confused team who just loves to speak in flowerly language.</p>
+              <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content Start -->
+    <section id="testimonial">
+      <div class="container">
+        <div class="row">
+          <div class="section-title text-center">
+            <h2>Fun Facts About Us</h2>
+            <p>We really don't actually do anything. We just like to talk like we do lots of stuff. Our own technical team has no idea what we do. But I *promise* we are super cool and do great things...</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="block">
+              <ul class="counter-box clearfix">
+                <li>
+                  <div class="block">
+                    <i class="ion-ios-chatboxes-outline"></i>
+                    <h4 class="counter">2000</h4>
+                    <span>Meaningless Words Spoken</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="block">
+                    <i class="ion-ios-glasses-outline"></i>
+                    <h4 class="counter">6000</h4>
+                    <span>Dollars Wasted</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="block">
+                    <i class="ion-ios-compose-outline"></i>
+                    <h4 class="counter">4</h4>
+                    <span>Emails Unanswered</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="block">
+                    <i class="ion-ios-timer-outline"></i>
+                    <h4 class="counter">7200</h4>
+                    <span>Seconds Wasted</span>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="testimonial-carousel">
+              <div id="testimonial-slider" class="owl-carousel">
+                <div>
+                    <img src="{% static 'airspace/img/cotation.png' %}" alt="IMG">
+                    <p>"This company really doesn't do anything. They say they do but they really don't. We don't even know if they actually help people. They tried to sell us, but honestly, we think it is completely fake."</p>
+                    <div class="user">
+                      <img src="{% static 'airspace/img/item-img1.jpg' %}" alt="Pepole">
+                      <p><span>Blonde Girl</span> Peter's Wife</p>
+                    </div>
+                </div>
+                <div>
+                  <img src="{% static 'airspace/img/cotation.png' %}" alt="IMG">
+                    <p>"This company really doesn't do anything. They say they do but they really don't. We don't even know if they actually help people. They tried to sell us, but honestly, we think it is completely fake."</p>
+                    <div class="user">
+                      <img src="{% static 'airspace/img/item-img1.jpg' %}" alt="Pepole">
+                      <p><span>Blonde Girl</span> Wilson's Girlfriend and Peter's Wife</p>
+                    </div>
+                </div>
+                <div>
+                  <img src="{% static 'airspace/img/cotation.png' %}" alt="IMG">
+                    <p>"This company really doesn't do anything. They say they do but they really don't. We don't even know if they actually help people. They tried to sell us, but honestly, we think it is completely fake."</p>
+                    <div class="user">
+                      <img src="{% static 'airspace/img/item-img1.jpg' %}" alt="Pepole">
+                      <p><span>Blonde Girl</span> Wilson's Girlfriend</p>
+                    </div>
+                </div>
+                <div>
+                  <img src="{% static 'airspace/img/cotation.png' %}" alt="IMG">
+                    <p>"This company really doesn't do anything. They say they do but they really don't. We don't even know if they actually help people. They tried to sell us, but honestly, we think it is completely fake."</p>
+                    <div class="user">
+                      <img src="{% static 'airspace/img/item-img1.jpg' %}" alt="Pepole">
+                      <p><span>Blonde Girl</span> Peter's Wife and Wilson's Girlfriend</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+    <!-- footer Start -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-manu">
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Terms</a></li>
+              </ul>
+            </div>
+            <p>Copyright &copy; Theme: <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+            
+           
+    
+    </body>
 </html>
