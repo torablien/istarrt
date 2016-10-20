@@ -2,6 +2,10 @@ Run Server
 
     $ python manage.py runserver $IP:$PORT
     
+Install Required Tools
+
+    sudo pip install -r requirements.txt
+    
 Adding New Template
 
  - Make sure to go to workspace/istarrt/settings.py and add   
