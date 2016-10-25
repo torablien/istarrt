@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html class="no-js">
 {% load static from staticfiles %}
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>iStarrt</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="{% static 'airspace/css/owl.carousel.css' %}">
-    <link rel="stylesheet" href="{% static 'airspace/css/bootstrap.min.css' %}">
-    <link rel="stylesheet" href="{% static 'airspace/css/font-awesome.min.css' %}">
-    <link rel="stylesheet" href="{% static 'airspace/css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'airspace/css/ionicons.min.css' %}">
-    <link rel="stylesheet" href="{% static 'airspace/css/animate.css' %}">
-    <link rel="stylesheet" href="{% static 'airspace/css/responsive.css' %}">
-    
-    <!-- JS -->
-    <script src="{% static 'airspace/js/vendor/modernizr-2.6.2.min.js' %}"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    
-    {% with jqueryfilepath="airspace/js/vendor/jquery-1.10.2.min.js" %}
-    <script>window.jQuery || document.write('<script src="{% static jqueryfilepath %}"><\/script>')</script>
-    {% endwith %}
-    
-    
-    <script src="{% static 'airspace/js/bootstrap.min.js' %}"></script>
-    <script src="{% static 'airspace/js/owl.carousel.min.js' %}"></script>
-    <script src="{% static 'airspace/js/plugins.js' %}"></script>
-    <script src="{% static 'airspace/js/min/waypoints.min.js' %}"></script>
-    <script src="{% static 'airspace/js/jquery.counterup.js' %}"></script>
 
-    <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb2EmyGZHbCEGvf0nxnNmObs8D_5-pikA&callback=initMap"></script>
-    <script src="{% static 'airspace/js/google-map-init.js' %}"></script>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>iStarrt</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% static 'airspace/css/owl.carousel.css' %}">
+  <link rel="stylesheet" href="{% static 'airspace/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'airspace/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'airspace/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'airspace/css/ionicons.min.css' %}">
+  <link rel="stylesheet" href="{% static 'airspace/css/animate.css' %}">
+  <link rel="stylesheet" href="{% static 'airspace/css/responsive.css' %}">
+
+  <!-- JS -->
+  <script src="{% static 'airspace/js/vendor/modernizr-2.6.2.min.js' %}"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  {% with jqueryfilepath="airspace/js/vendor/jquery-1.10.2.min.js" %}
+  <script>
+    window.jQuery || document.write('<script src="{% static jqueryfilepath %}"><\/script>')
+  </script>
+  {% endwith %}
 
 
-    <script src="{% static 'airspace/js/main.js' %}"></script>
+  <script src="{% static 'airspace/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'airspace/js/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'airspace/js/plugins.js' %}"></script>
+  <script src="{% static 'airspace/js/min/waypoints.min.js' %}"></script>
+  <script src="{% static 'airspace/js/jquery.counterup.js' %}"></script>
+
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb2EmyGZHbCEGvf0nxnNmObs8D_5-pikA&callback=initMap"></script>
+  <script src="{% static 'airspace/js/google-map-init.js' %}"></script>
 
 
-  </head>
-  <body>
+  <script src="{% static 'airspace/js/main.js' %}"></script>
+
+
+</head>
+
+<body>
 
 
 
-    <!-- Header Start -->
+  <!-- Header Start -->
   <header>
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          
-        <h1 style = "font-size: 30px; text-align:center">Institute for the Sustainable Transfer of Advanced Renewable Resource Technology</h1>
-      
-         <!-- header Nav Start -->
+
+          <h1 style="font-size: 30px; text-align:center">Institute for the Sustainable Transfer of Advanced Renewable Resource Technology</h1>
+
+          <!-- header Nav Start -->
           <nav class="navbar navbar-default">
             <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
@@ -68,57 +72,65 @@
                   <img src="{% static 'airspace/img/samplelogos.png' %}" alt="Logo">
                 </a>
               </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Contact</a></li>
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-              </div><!-- /.container-fluid -->
-            </nav>
-          </div>
-        </div>
-      </div>
-    </header><!-- header close -->
-        
-    <!-- Slider Start -->
-    <section id="slider">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-2">
-            <div class="block">
-              <h1 class="animated fadeInUp">OUR MISSION</h1></h1>
-              <p class="animated fadeInUp">is to create a formal platform for the  remarkable intelligence and ingenuity of the world’s poor to help others in similar circumstances, specifically using renewable resources to help solve development issues.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Wrapper Start -->
-    <section id="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <div class="block">
-              <div class="section-title">
-                <h2>THROUGHOUT THE WORLD</h2>
-                <p>there are millions of people living in developing countries and communities without access to basic commodities and goods.</p>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Work</a></li>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
               </div>
-              <p> The hurdles these people face in attaining these necceisisties are varied and often seem insurmountable. However, this is not the case. Every problem has already been solved already.We aim to bring these solutions to those who need them. This sentiment is the origin of our instituion. We need find a way to allow these communities to interact and disperese thier accumulated knowledge and experience. Our goal is to devlope a digital archive of projects and solutions tailored to those living in developing countries. 
+              <!-- /.navbar-collapse -->
             </div>
-          </div><!-- .col-md-7 close -->
-          <div class="col-md-5 col-sm-12">
-            <div class="block">
-              <img src="{% static 'airspace/img/wrapper-img.png' %}" alt="Img">
-            </div>
-          </div><!-- .col-md-5 close -->
+            <!-- /.container-fluid -->
+          </nav>
         </div>
       </div>
-    </section>
+    </div>
+  </header>
+  <!-- header close -->
+
+  <!-- Slider Start -->
+  <section id="slider">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-2">
+          <div class="block">
+            <h1 class="animated fadeInUp">OUR MISSION</h1>
+            </h1>
+            <p class="animated fadeInUp">is to create a formal platform for the remarkable intelligence and ingenuity of the world’s poor to help others in similar circumstances, specifically using renewable resources to help solve development issues.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Wrapper Start -->
+  <section id="intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-sm-12">
+          <div class="block">
+            <div class="section-title">
+              <h2>THROUGHOUT THE WORLD</h2>
+              <p>there are millions of people living in developing countries and communities without access to basic commodities and goods.</p>
+            </div>
+            <p> The hurdles these people face in attaining these necceisisties are varied and often seem insurmountable. However, this is not the case. Every problem has already been solved already.We aim to bring these solutions to those who need them. This
+              sentiment is the origin of our instituion. We need find a way to allow these communities to interact and disperese thier accumulated knowledge and experience. Our goal is to devlope a digital archive of projects and solutions tailored to
+              those living in developing countries.
+          </div>
+        </div>
+        <!-- .col-md-7 close -->
+        <div class="col-md-5 col-sm-12">
+          <div class="block">
+            <img src="{% static 'airspace/img/wrapper-img.png' %}" alt="Img">
+          </div>
+        </div>
+        <!-- .col-md-5 close -->
+      </div>
+    </div>
+  </section>
 
 
   <section id="feature">
@@ -126,319 +138,323 @@
       <div class="row">
         <div class="col-md-6 col-md-offset-6">
           <h2>WE BELIEVE IN GREAT IDEAS</h2>
-          <p>I-STARRT has performed early activities in resource-poor areas in the New Orleans, Nigeria, Gambia and Uganda. Among children, we have experiences with detained and opportunity youth, vulnerable populations such child soldiers, HIV orphans and infected youth, and those at risk for drug and violent crimes. Among adults, we have worked with mothers of children under five, families in areas of high risk for infectious disease, community health and medical workers. Our next target of interest is entrepreneurs.</p>
-          
+          <p>I-STARRT has performed early activities in resource-poor areas in the New Orleans, Nigeria, Gambia and Uganda. Among children, we have experiences with detained and opportunity youth, vulnerable populations such child soldiers, HIV orphans and
+            infected youth, and those at risk for drug and violent crimes. Among adults, we have worked with mothers of children under five, families in areas of high risk for infectious disease, community health and medical workers. Our next target of
+            interest is entrepreneurs.</p>
+
           <a href="#" class="btn btn-view-works">View Works</a>
         </div>
       </div>
     </div>
   </section>
-  
 
-<section id="portfolio-work">
-        <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="section-title" style="text-align:center;">
+
+  <section id="portfolio-work">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title" style="text-align:center;">
             <h2>Our Projects</h2>
             <p>Don’t just take our word for it. Check out some of our latest work.</p>
           </div>
-                <div class="block">
-                  <div class="portfolio-menu">
-                    <ul>
-                        <li class="filter" data-filter="all">Everything</li>
-                        <li class="filter" data-filter=".Agriculture">Agriculture</li>
-                        <li class="filter" data-filter=".Architecture">Architecture</li>
-                        <li class="filter" data-filter=".Energy">Energy</li>
-                        <li class="filter" data-filter=".Water">Water</li>
-                        <li class="filter" data-filter=".PublicHealth">Public Health</li>
-                    </ul>
-                  </div>
-                  <div class="portfolio-contant">
-                    <ul id="portfolio-contant-active">
-                        <li class="mix Agriculture">
-                          <a href="#">
-                            <img src="{% static 'airspace/img/portfolio/work1.jpg' %}" alt="">
-                            <div class="overly">
-                              <div class="position-center">
-                                <h2>Agriculture Project</h2>
-                                <p>Labore et dolore magna aliqua. Ut enim ad </p>
-                                
-                              </div>
-                            </div>
-                          </a>
-                      </li>
-                      <li class="mix Architecture">
-                        <a href="#">
-                          <img src="{% static 'airspace/img/portfolio/work2.jpg' %}" alt="">
-                          <div class="overly">
-                            <div class="position-center">
-                              <h2>Architecture Project</h2>
-                              <p>Labore et dolore magna aliqua. Ut enim ad </p>
-                              
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="mix Energy">
-                        <a href="#">
-                          <img src="{% static 'airspace/img/portfolio/work3.jpg' %}" alt="">
-                          <div class="overly">
-                            <div class="position-center">
-                              <h2>Energy Project</h2>
-                              <p>Labore et dolore magna aliqua. Ut enim ad </p>
-                              
-                            </div>
-                          </div>
-                          
-                        </a>
-                      </li>
-                      <li class="mix Water">
-                        <a href="#">
-                          <img src="{% static 'airspace/img/portfolio/work4.jpg' %}" alt="">
-                          <div class="overly">
-                            <div class="position-center">
-                              <h2>Water Project</h2>
-                              <p>Labore et dolore magna aliqua. Ut enim ad </p>
-                              
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="mix PublicHealth">
-                        <a href="#">
-                          <img src="{% static 'airspace/img/portfolio/work5.jpg' %}" alt="">
-                          <div class="overly">
-                            <div class="position-center">
-                              <h2>Public Health Project 1</h2>
-                              <p>Labore et dolore magna aliqua. Ut enim ad </p>
-                              
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="mix PublicHealth">
-                        <a href="#">
-                          <img src="{% static 'airspace/img/portfolio/work6.jpg' %}" alt="">
-                          <div class="overly">
-                            <div class="position-center">
-                              <h2>Public Health Project 2</h2>
-                              <p>Labore et dolore magna aliqua. Ut enim ad </p>
-                              
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    </section>
-
-  
-  <section id="call-to-action">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block">
-                        <h1>Our Services</h1>
-                        <p>We provide an ever expanding catalog of services, project ideas. and inspirations.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-  
-  
-        
-    <!-- Service Start -->
-    <section id="service">
-      <div class="container">
-        <div class="row ">
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="icon ion-coffee"></i>
-              <h4>Innovation</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-compass"></i>
-              <h4>Intelligent Design</h4>
-              <p>All of the solutions and projects we promote are designed to use recycled parts and be economically accessible to any demographic </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-image"></i>
-              <h4>Technology</h4>
-              <p>We provide a digital platform for the sharing of ideas and solutions for many of the day to day problems found in the developing world </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-bug"></i>
-              <h4>Start Up</h4>
-              <p>Despite our increaseing reach, we retain a small staff and the dynamic and open culture sterotypically attribute to the best startups </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-headphone"></i>
-              <h4>Inspiration</h4>
-              <p>One of our key philosophies is that we don't have the solutions to everyone's problems. You do. Our goal is to simply allow you to share your philosophy with the rest of the world </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-leaf"></i>
-              <h4>Development</h4>
-              <p>We were founded to help the developing and struggling parts of the world and remain committed to do so: now and forever forward. </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-planet"></i>
-              <h4>Accessibility</h4>
-              <p>We remain committed to permitting access to the projects and stories we host, no matter your community's level of infrastructure or technology.  </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-earth"></i>
-              <h4>World View</h4>
-              <p>We work hard to bring the ideas and services we have accumulated to people no matter thier religon, ethnicity, or location </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Call to action Start -->
-    <section id="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="block">
-              <h2>Want to view more stories or contribute your own?</h2>
-              <p>Click the button below to be transported to our story and forum portal .</p>
-              <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Content Start -->
-    <section id="testimonial">
-      <div class="container">
-        <div class="row">
-          <div class="section-title text-center">
-            <h2>Status of our project</h2>
-            <p></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="block">
-              <ul class="counter-box clearfix">
-                <li>
-                  <div class="block">
-                    <i class="ion-ios-chatboxes-outline"></i>
-                    <h4 class="counter">2000</h4>
-                    <span>Community Members</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="block">
-                    <i class="ion-ios-glasses-outline"></i>
-                    <h4 class="counter">60</h4>
-                    <span>People helped</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="block">
-                    <i class="ion-ios-compose-outline"></i>
-                    <h4 class="counter">12</h4>
-                    <span>Stories for you to view</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="block">
-                    <i class="ion-ios-timer-outline"></i>
-                    <h4 class="counter">7200</h4>
-                    <span>Hours/money/metric for success saved</span>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="testimonial-carousel">
-              <div id="testimonial-slider" class="owl-carousel">
-                <div>
-                    <img src="{% static 'airspace/img/cotation.png' %}" alt="IMG">
-                    <p>"The easy to follow stories allowed me to build a greenhouse. Now we have fresh vegtables all fall long."</p>
-                    <div class="user">
-                      <img src="{% static 'airspace/img/item-img1.jpg' %}" alt="Pepole">
-                      <p><span>Customer #1</span>Soshunguwe, South Africa</p>
-                    </div>
-                </div>
-                <div>
-                  <img src="{% static 'airspace/img/cotation.png' %}" alt="IMG">
-                    <p>"For years our electricity has been unreliable cutting on and off at different times throught the week. By following some simple steps and paying for a few used parts we now have a part time generator. It's not powerful but it help us pump water or use the oven when we need to."</p>
-                    <div class="user">
-                      <img src="{% static 'airspace/img/item-img1.jpg' %}" alt="Pepole">
-                      <p><span>Customer #2</span> Abuja, Nigeria</p>
-                    </div>
-                </div>
-                <div>
-                  <img src="{% static 'airspace/img/cotation.png' %}" alt="IMG">
-                    <p>"I chose to do one of these projects because I had some spare time and my friend suggested I take a look. Using some old parts I was able to build a fan! It may not be entirely needed but it helps keep me cool "</p>
-                    <div class="user">
-                      <img src="{% static 'airspace/img/item-img1.jpg' %}" alt="Pepole">
-                      <p><span>Customer 3</span> Cario, Egypt</p>
-                    </div>
-                </div>
-               
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-                <div class="block">
-                    <div class="google-map">
-                      <div id="map"></div>
-                    </div>
-                </div>
-
-    
-    <!-- footer Start -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="footer-manu">
+          <div class="block">
+            <div class="portfolio-menu">
               <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Terms</a></li>
+                <li class="filter" data-filter="all">Everything</li>
+                <li class="filter" data-filter=".Agriculture">Agriculture</li>
+                <li class="filter" data-filter=".Architecture">Architecture</li>
+                <li class="filter" data-filter=".Energy">Energy</li>
+                <li class="filter" data-filter=".Water">Water</li>
+                <li class="filter" data-filter=".PublicHealth">Public Health</li>
               </ul>
             </div>
-            <p>Copyright &copy; Theme: <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
+            <div class="portfolio-contant">
+              <ul id="portfolio-contant-active">
+                <li class="mix Agriculture">
+                  <a href="#">
+                    <img src="{% static 'airspace/img/portfolio/work1.jpg' %}" alt="">
+                    <div class="overly">
+                      <div class="position-center">
+                        <h2>Agriculture Project</h2>
+                        <p>Labore et dolore magna aliqua. Ut enim ad </p>
+
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix Architecture">
+                  <a href="#">
+                    <img src="{% static 'airspace/img/portfolio/work2.jpg' %}" alt="">
+                    <div class="overly">
+                      <div class="position-center">
+                        <h2>Architecture Project</h2>
+                        <p>Labore et dolore magna aliqua. Ut enim ad </p>
+
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix Energy">
+                  <a href="#">
+                    <img src="{% static 'airspace/img/portfolio/work3.jpg' %}" alt="">
+                    <div class="overly">
+                      <div class="position-center">
+                        <h2>Energy Project</h2>
+                        <p>Labore et dolore magna aliqua. Ut enim ad </p>
+
+                      </div>
+                    </div>
+
+                  </a>
+                </li>
+                <li class="mix Water">
+                  <a href="#">
+                    <img src="{% static 'airspace/img/portfolio/work4.jpg' %}" alt="">
+                    <div class="overly">
+                      <div class="position-center">
+                        <h2>Water Project</h2>
+                        <p>Labore et dolore magna aliqua. Ut enim ad </p>
+
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix PublicHealth">
+                  <a href="#">
+                    <img src="{% static 'airspace/img/portfolio/work5.jpg' %}" alt="">
+                    <div class="overly">
+                      <div class="position-center">
+                        <h2>Public Health Project 1</h2>
+                        <p>Labore et dolore magna aliqua. Ut enim ad </p>
+
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mix PublicHealth">
+                  <a href="#">
+                    <img src="{% static 'airspace/img/portfolio/work6.jpg' %}" alt="">
+                    <div class="overly">
+                      <div class="position-center">
+                        <h2>Public Health Project 2</h2>
+                        <p>Labore et dolore magna aliqua. Ut enim ad </p>
+
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-            
-           
-    
-    </body>
+    </div>
+  </section>
+
+
+  <section id="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            <h1>Our Services</h1>
+            <p>We provide an ever expanding catalog of services, project ideas. and inspirations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Service Start -->
+  <section id="service">
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm-6 col-md-3">
+          <div class="service-item">
+            <i class="icon ion-coffee"></i>
+            <h4>Innovation</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="service-item">
+            <i class="ion-compass"></i>
+            <h4>Intelligent Design</h4>
+            <p>All of the solutions and projects we promote are designed to use recycled parts and be economically accessible to any demographic </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="service-item">
+            <i class="ion-image"></i>
+            <h4>Technology</h4>
+            <p>We provide a digital platform for the sharing of ideas and solutions for many of the day to day problems found in the developing world </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="service-item">
+            <i class="ion-bug"></i>
+            <h4>Start Up</h4>
+            <p>Despite our increaseing reach, we retain a small staff and the dynamic and open culture sterotypically attribute to the best startups </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="service-item">
+            <i class="ion-headphone"></i>
+            <h4>Inspiration</h4>
+            <p>One of our key philosophies is that we don't have the solutions to everyone's problems. You do. Our goal is to simply allow you to share your philosophy with the rest of the world </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="service-item">
+            <i class="ion-leaf"></i>
+            <h4>Development</h4>
+            <p>We were founded to help the developing and struggling parts of the world and remain committed to do so: now and forever forward. </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="service-item">
+            <i class="ion-planet"></i>
+            <h4>Accessibility</h4>
+            <p>We remain committed to permitting access to the projects and stories we host, no matter your community's level of infrastructure or technology. </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="service-item">
+            <i class="ion-earth"></i>
+            <h4>World View</h4>
+            <p>We work hard to bring the ideas and services we have accumulated to people no matter thier religon, ethnicity, or location </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Call to action Start -->
+  <section id="call-to-action">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="block">
+            <h2>Want to view more stories or contribute your own?</h2>
+            <p>Click the button below to be transported to our story and forum portal .</p>
+            <a class="btn btn-default btn-call-to-action" href="#">Tell Us Your Story</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Content Start -->
+  <section id="testimonial">
+    <div class="container">
+      <div class="row">
+        <div class="section-title text-center">
+          <h2>Status of our project</h2>
+          <p></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="block">
+            <ul class="counter-box clearfix">
+              <li>
+                <div class="block">
+                  <i class="ion-ios-chatboxes-outline"></i>
+                  <h4 class="counter">2000</h4>
+                  <span>Community Members</span>
+                </div>
+              </li>
+              <li>
+                <div class="block">
+                  <i class="ion-ios-glasses-outline"></i>
+                  <h4 class="counter">60</h4>
+                  <span>People helped</span>
+                </div>
+              </li>
+              <li>
+                <div class="block">
+                  <i class="ion-ios-compose-outline"></i>
+                  <h4 class="counter">12</h4>
+                  <span>Stories for you to view</span>
+                </div>
+              </li>
+              <li>
+                <div class="block">
+                  <i class="ion-ios-timer-outline"></i>
+                  <h4 class="counter">7200</h4>
+                  <span>Hours/money/metric for success saved</span>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="testimonial-carousel">
+            <div id="testimonial-slider" class="owl-carousel">
+              <div>
+                <img src="{% static 'airspace/img/cotation.png' %}" alt="IMG">
+                <p>"The easy to follow stories allowed me to build a greenhouse. Now we have fresh vegtables all fall long."</p>
+                <div class="user">
+                  <img src="{% static 'airspace/img/item-img1.jpg' %}" alt="Pepole">
+                  <p><span>Customer #1</span>Soshunguwe, South Africa</p>
+                </div>
+              </div>
+              <div>
+                <img src="{% static 'airspace/img/cotation.png' %}" alt="IMG">
+                <p>"For years our electricity has been unreliable cutting on and off at different times throught the week. By following some simple steps and paying for a few used parts we now have a part time generator. It's not powerful but it help us
+                  pump water or use the oven when we need to."</p>
+                <div class="user">
+                  <img src="{% static 'airspace/img/item-img1.jpg' %}" alt="Pepole">
+                  <p><span>Customer #2</span> Abuja, Nigeria</p>
+                </div>
+              </div>
+              <div>
+                <img src="{% static 'airspace/img/cotation.png' %}" alt="IMG">
+                <p>"I chose to do one of these projects because I had some spare time and my friend suggested I take a look. Using some old parts I was able to build a fan! It may not be entirely needed but it helps keep me cool "</p>
+                <div class="user">
+                  <img src="{% static 'airspace/img/item-img1.jpg' %}" alt="Pepole">
+                  <p><span>Customer 3</span> Cario, Egypt</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="block">
+    <div class="google-map">
+      <div id="map"></div>
+    </div>
+  </div>
+
+
+  <!-- footer Start -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-manu">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+          <p>Copyright &copy; Theme: <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
+
 </html>
