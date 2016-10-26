@@ -68,8 +68,8 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                  <img src="{% static 'airspace/img/samplelogos.png' %}" alt="Logo">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                  <img src="{% static 'airspace/img/Istarrt.png' %}" alt="Logo">
                 </a>
               </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
@@ -98,9 +98,9 @@
       <div class="row">
         <div class="col-md-10 col-md-offset-2">
           <div class="block">
-            <h1 class="animated fadeInUp">OUR MISSION</h1>
+            <h1 class="animated fadeInUp">OUR MISSION: </h1>
             </h1>
-            <p class="animated fadeInUp">is to create a formal platform for the remarkable intelligence and ingenuity of the world’s poor to help others in similar circumstances, specifically using renewable resources to help solve development issues.</p>
+            <p class="animated fadeInUp">To create a formal platform for the remarkable intelligence and ingenuity of the world’s poor to help others in similar circumstances, specifically using renewable resources to help solve development issues.</p>
           </div>
         </div>
       </div>
@@ -171,7 +171,7 @@
             <div class="portfolio-contant">
               <ul id="portfolio-contant-active">
                 <li class="mix Agriculture">
-                  <a href="#">
+                  <a href="{% url 'project' uid=0 %}">
                     <img src="{% static 'airspace/img/portfolio/work1.jpg' %}" alt="">
                     <div class="overly">
                       <div class="position-center">
@@ -183,7 +183,7 @@
                   </a>
                 </li>
                 <li class="mix Architecture">
-                  <a href="#">
+                  <a href="{% url 'project' uid=1 %}">
                     <img src="{% static 'airspace/img/portfolio/work2.jpg' %}" alt="">
                     <div class="overly">
                       <div class="position-center">
@@ -195,7 +195,7 @@
                   </a>
                 </li>
                 <li class="mix Energy">
-                  <a href="#">
+                  <a href="{% url 'project' uid=2 %}">
                     <img src="{% static 'airspace/img/portfolio/work3.jpg' %}" alt="">
                     <div class="overly">
                       <div class="position-center">
@@ -208,7 +208,7 @@
                   </a>
                 </li>
                 <li class="mix Water">
-                  <a href="#">
+                  <a href="{% url 'project' uid=3 %}">
                     <img src="{% static 'airspace/img/portfolio/work4.jpg' %}" alt="">
                     <div class="overly">
                       <div class="position-center">
@@ -220,7 +220,7 @@
                   </a>
                 </li>
                 <li class="mix PublicHealth">
-                  <a href="#">
+                  <a href="{% url 'project' uid=4 %}">
                     <img src="{% static 'airspace/img/portfolio/work5.jpg' %}" alt="">
                     <div class="overly">
                       <div class="position-center">
@@ -232,7 +232,7 @@
                   </a>
                 </li>
                 <li class="mix PublicHealth">
-                  <a href="#">
+                  <a href="{% url 'project' uid=4 %}">
                     <img src="{% static 'airspace/img/portfolio/work6.jpg' %}" alt="">
                     <div class="overly">
                       <div class="position-center">
