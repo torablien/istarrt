@@ -5,7 +5,7 @@ jQuery(document).ready(function() {
         var a = {
                 zoom: 5,
                 scrollwheel: false,
-                center: new google.maps.LatLng(8.3848956,9.2657407),
+                center: new google.maps.LatLng(8.3848956, 9.2657407),
                 styles: [{
                     "featureType": "administrative",
                     "elementType": "labels.text.fill",
@@ -214,41 +214,47 @@ jQuery(document).ready(function() {
 
             b = document.getElementById("map"),
 
+
             c = new google.maps.Map(b, a);
 
-        new google.maps.Marker(
-            {
-                position: new google.maps.LatLng(-1.2920659, 36.821946),
-                map: c,
-                title: "Nairobi, Kenya"
-            })
-            
-            new google.maps.Marker({
-                position: new google.maps.LatLng(5.5913754,-0.2497703),
-                map: c,
-                title: "Accra, Ghana"
-            })
-           new google.maps.Marker({
-                position: new google.maps.LatLng(13.4680941,-16.6977596),
-                map: c,
-                title: "Farahja, Gambia"
-            })
-            new google.maps.Marker({
-                position: new google.maps.LatLng(8.9423089,7.0605375),
-                map: c,
-                title: "Gwagwalada, Nigeria"
-            })
-            new google.maps.Marker({
-                position: new google.maps.LatLng(2.7754066,32.2529404),
-                map: c,
-                title: "Gulu, Uganda"
-            })
-            new google.maps.Marker({
-                position: new google.maps.LatLng(30.0218667,-90.0225578),
-                map: c,
-                title: "New Orleans"
-            })
+
+
+        var marker1 = new google.maps.Marker({
+            position: new google.maps.LatLng(-1.2920659, 36.821946),
+            map: c,
+            title: "Nairobi, Kenya"
+        });
+
+        var marker2 = new google.maps.Marker({
+            position: new google.maps.LatLng(5.5913754, -0.2497703),
+            map: c,
+            title: "Accra, Ghana"
+        });
+
+       var marker3 =  new google.maps.Marker({
+            position: new google.maps.LatLng(13.4680941, -16.6977596),
+            map: c,
+            title: "Farahja, Gambia"
+        });
         
+        var marker4 = new google.maps.Marker({
+            position: new google.maps.LatLng(8.9423089, 7.0605375),
+            map: c,
+            title: "Gwagwalada, Nigeria"
+        });
+        
+        var marker5 = new google.maps.Marker({
+            position: new google.maps.LatLng(2.7754066, 32.2529404),
+            map: c,
+            title: "Gulu, Uganda"
+        });
+        
+        var marker6 = new google.maps.Marker({
+            position: new google.maps.LatLng(30.0218667, -90.0225578),
+            map: c,
+            title: "New Orleans"
+        });
+
     }
 
     google.maps.event.addDomListener(window, "load", b);
