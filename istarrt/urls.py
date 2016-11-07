@@ -16,8 +16,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+import home.views 
 
 urlpatterns = [
-    url(r'^$', 'home.views.index'),
+    url(r'^$', home.views.index, name = 'home'),
     url(r'^admin/', admin.site.urls),
+    url(r'^project/(?P<uid>[0-9]{1})/$',home.views.project, name = 'project')
 ]
