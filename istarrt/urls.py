@@ -21,5 +21,5 @@ import home.views
 urlpatterns = [
     url(r'^$', home.views.index, name = 'home'),
     url(r'^admin/', admin.site.urls),
-    url(r'^project/(?P<uid>[0-9]{1})/$',home.views.project, name = 'project')
+    url(r'^project/(?P<uid>[0-9]{1})/$', home.views.project, name = 'project')
 ]

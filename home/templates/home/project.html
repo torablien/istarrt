@@ -124,24 +124,35 @@
         <div class="row">
             <iframe width="560" height="315" src="{{videos}}" frameborder="0" allowfullscreen></iframe>
         </div>
-        </br>
-        <div>
-            {% for image in images %}
-                <div style="float:left;">
-                    <p>
-                        <img src="{% static image %}" height="250px" width="auto"></img>
-                    </p>
-                </div>
-            {% endfor %}
-        </div>
     </div>
     </section>
 
-
  
-    
-    
-    
+ <!-- Clients Logo Section Start -->
+    <section id="clients-logo-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <div id="clients-logo" class="owl-carousel">
+                  
+                {% for image in images %}
+                <div class="clients-logo-img">
+                   <img src="{% static image %}" height="250px" ></img>
+                </div>
+                {% endfor %}
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+ 
+ 
+ 
+
     <footer>
         <div class="container">
             <div class="row">

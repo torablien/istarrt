@@ -124,13 +124,38 @@
         <!-- .col-md-7 close -->
         <div class="col-md-5 col-sm-12">
           <div class="block">
-            <img src="{% static 'airspace/img/wrapper-img.png' %}" alt="Img">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2YBtspm8j8M" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
         <!-- .col-md-5 close -->
       </div>
     </div>
   </section>
+
+
+
+    <!-- Clients Logo Section Start -->
+    <section id="clients-logo-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <div id="clients-logo" class="owl-carousel">
+                
+                {% for i in "123456789"%}
+                {% with "airspace/img/clients/clients-logo"|add:i|add:".png" as imgloc %}
+                <div class="clients-logo-img">
+                  <img src="{% static imgloc %}" alt="Features">
+                </div>
+                {% endwith %}
+                {% endfor %}
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
   <section id="feature">

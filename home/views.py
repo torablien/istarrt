@@ -27,7 +27,7 @@ Agriculture = {
 Architecture = {
     'title':'Architecture', 
     'subtitle':'everyone deserves a roof overhead',
-    'images':['airspace/img/Building/construction1.png','airspace/img/Building/construction2.png','airspace/img/Building/construction3.png'],
+    'images':['airspace/img/Building/construction1.png','airspace/img/Building/construction2.png','airspace/img/Building/construction3.png', 'airspace/img/clients/clients-logo1.png', 'airspace/img/clients/clients-logo1.png','airspace/img/clients/clients-logo1.png'],
     'videos':'https://www.youtube.com/embed/iQsnObyii4Q', 
     'header':'Our Work in: Architecture',
     'text':"""Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
