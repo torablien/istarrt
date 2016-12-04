@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="no-js">
+{% load static from staticfiles %}
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Project</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'airspace/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static 'airspace/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'airspace/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'airspace/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'airspace/css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'airspace/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'airspace/css/responsive.css' %}">
+
+    <!-- JS -->
+    <script src="{% static 'airspace/js/vendor/modernizr-2.6.2.min.js' %}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    {% with jqueryfilepath="airspace/js/vendor/jquery-1.10.2.min.js" %}
+    <script>
+        window.jQuery || document.write('<script src="{% static jqueryfilepath %}"><\/script>')
+    </script>
+    {% endwith %}
+
+
+    <script src="{% static 'airspace/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'airspace/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'airspace/js/plugins.js' %}"></script>
+    <script src="{% static 'airspace/js/min/waypoints.min.js' %}"></script>
+    <script src="{% static 'airspace/js/jquery.counterup.js' %}"></script>
+
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBb2EmyGZHbCEGvf0nxnNmObs8D_5-pikA&callback=initMap"></script>
+    <script src="{% static 'airspace/js/google-map-init.js' %}"></script>
+
+
+    <script src="{% static 'airspace/js/main.js' %}"></script>
+
+
+</head>
+
+<body>
+    
+ <h1> 404 ACK</h1>
+ 
+ 
+ 
+
+<!-- footer Start -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-manu">
+            <ul>
+              <li><a href="#">Menu 1</a></li>
+              <li><a href="#">Menu 2</a></li>
+              <li><a href="#">Menu 3</a></li>
+              <li><a href="#">Menu 4</a></li>
+              <li><a href="#">Menu 5</a></li>
+            </ul>
+          </div>
+          <p>Copyright &copy; Neil Barot, Wilson Jeter, Peter Riser<br/> Theme: <a href="http://www.themefisher.com">Themefisher</a>. <br/> All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
