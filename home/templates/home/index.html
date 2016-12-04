@@ -210,79 +210,20 @@
             </div>
             <div class="portfolio-contant">
               <ul id="portfolio-contant-active">
-                <li class="mix Agriculture">
-                  <a href="{% url 'project' uid=0 %}">
+                {% for o in objects %}
+                <li class="mix {{o.title}}">
+                  <a href="{% url 'project' uid=o.id %}">
                     <img src="{% static 'airspace/img/portfolio/work1.jpg' %}" alt="">
                     <div class="overly">
                       <div class="position-center">
-                        <h2>Agriculture Project</h2>
-                        <p>Labore et dolore magna aliqua. Ut enim ad </p>
+                        <h2>{{o.title}}</h2>
+                        <p>{{o.subtitle}}</p>
 
                       </div>
                     </div>
                   </a>
                 </li>
-                <li class="mix Architecture">
-                  <a href="{% url 'project' uid=1 %}">
-                    <img src="{% static 'airspace/img/portfolio/work2.jpg' %}" alt="">
-                    <div class="overly">
-                      <div class="position-center">
-                        <h2>Architecture Project</h2>
-                        <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="mix Energy">
-                  <a href="{% url 'project' uid=2 %}">
-                    <img src="{% static 'airspace/img/portfolio/work3.jpg' %}" alt="">
-                    <div class="overly">
-                      <div class="position-center">
-                        <h2>Energy Project</h2>
-                        <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                      </div>
-                    </div>
-
-                  </a>
-                </li>
-                <li class="mix Water">
-                  <a href="{% url 'project' uid=3 %}">
-                    <img src="{% static 'airspace/img/portfolio/work4.jpg' %}" alt="">
-                    <div class="overly">
-                      <div class="position-center">
-                        <h2>Water Project</h2>
-                        <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="mix PublicHealth">
-                  <a href="{% url 'project' uid=4 %}">
-                    <img src="{% static 'airspace/img/portfolio/work5.jpg' %}" alt="">
-                    <div class="overly">
-                      <div class="position-center">
-                        <h2>Public Health Project 1</h2>
-                        <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                      </div>
-                    </div>
-                  </a>
-                </li>
-                <li class="mix PublicHealth">
-                  <a href="{% url 'project' uid=4 %}">
-                    <img src="{% static 'airspace/img/portfolio/work6.jpg' %}" alt="">
-                    <div class="overly">
-                      <div class="position-center">
-                        <h2>Public Health Project 2</h2>
-                        <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                      </div>
-                    </div>
-                  </a>
-                </li>
+                {% endfor %}
               </ul>
             </div>
           </div>
