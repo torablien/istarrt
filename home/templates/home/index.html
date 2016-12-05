@@ -58,7 +58,7 @@
           <h1 style="font-size: 30px; text-align:center">Institute for the Sustainable Transfer of Advanced Renewable Resource Technology</h1>
 
           <!-- header Nav Start -->
-          <nav class="navbar navbar-default navbar-fixed-top navbar navbar-inverse">
+          <nav class="navbar navbar-default  navbar navbar-inverse">
             <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
@@ -156,7 +156,7 @@
             <div class="block">
               <div id="clients-logo" class="owl-carousel">
                 
-                {% for i in "123456789"%}
+                {% for i in "123456"%}
                 {% with "airspace/img/clients/clients-logo"|add:i|add:".png" as imgloc %}
                 <div class="clients-logo-img">
                   <img src="{% static imgloc %}" alt="Features">
