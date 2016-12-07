@@ -12,15 +12,12 @@ def index(request):
 def project(request, uid = -1):
     page = projects.objects.get(id = int(uid))
     arr =  str(page.images).split(",")
-    for i in range(len(arr)):
-        arr[i] = page.filepath + arr[i]
     ret = {
         'title': page.title,
         'subtitle': page.subtitle,
         'videos': page.video, 
         'images': arr,
-        'text': page.words,
-        'filepath':page.filepath
+        'text': page.words
         
     }
     return render(request,"home/project.html", ret)
